@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "B69_Layout_ASP_Net_Razor/1.0.0": {
+        "runtime": {
+          "B69_Layout_ASP_Net_Razor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "B69_Layout_ASP_Net_Razor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

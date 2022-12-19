@@ -1,0 +1,12 @@
+@using XTL
+@model List<Product>
+
+<h1> Nội dung của ProductBox trong file Default.cshtml</h1>
+<ul>
+    @foreach(var i in Model)
+    {
+        <li class = "list-group-item">
+            Tên: @i.Name Giá: (<strong>@i.Price</strong>)
+        </li>
+    }
+</ul>

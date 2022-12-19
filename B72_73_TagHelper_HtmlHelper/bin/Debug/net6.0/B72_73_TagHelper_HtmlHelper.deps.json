@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "B72_73_TagHelper_HtmlHelper/1.0.0": {
+        "runtime": {
+          "B72_73_TagHelper_HtmlHelper.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "B72_73_TagHelper_HtmlHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

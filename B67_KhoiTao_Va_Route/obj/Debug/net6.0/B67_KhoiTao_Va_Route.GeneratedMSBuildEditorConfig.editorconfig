@@ -8,61 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = B67_KhoiTao_Va_Route
 build_property.RootNamespace = B67_KhoiTao_Va_Route
-build_property.ProjectDir = D:\Code_CShap\ASP_Net_Razor\B67_KhoiTao_Va_Route\
+build_property.ProjectDir = d:\Code_CShap\ASP_Net_Razor\B67_KhoiTao_Va_Route\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Code_CShap\ASP_Net_Razor\B67_KhoiTao_Va_Route
+build_property.MSBuildProjectDirectory = d:\Code_CShap\ASP_Net_Razor\B67_KhoiTao_Va_Route
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Areas/Products/Pages/index.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Areas/Products/Pages/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjdHNcUGFnZXNcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Areas/Products/Pages/Sanphammoi.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Areas/Products/Pages/Sanphammoi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjdHNcUGFnZXNcU2FucGhhbW1vaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Areas/User/Pages/index.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Areas/User/Pages/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxQYWdlc1xpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Areas/User/Pages/Login.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Areas/User/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxQYWdlc1xMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/Dichvu/Dichvu1.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/Dichvu/Dichvu1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGljaHZ1XERpY2h2dTEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/Dichvu/Dichvu2.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/Dichvu/Dichvu2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGljaHZ1XERpY2h2dTIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/Dichvu/index.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/Dichvu/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGljaHZ1XGluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/FirstPage.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/FirstPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlyc3RQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/SecondPage.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/SecondPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2Vjb25kUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/Shared/_MyLayout.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/Shared/_MyLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9NeUxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/ThirdPage.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/ThirdPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGhpcmRQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/_ViewImports.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/_ViewStart.cshtml]
+[d:/Code_CShap/ASP_Net_Razor/B67_KhoiTao_Va_Route/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

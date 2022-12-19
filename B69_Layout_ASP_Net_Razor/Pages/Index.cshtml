@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    @* Trang index có truyền vào là một _Layout mà trong trang lại có thêm một MyLayout thì nó sẽ sử dụng bố cục _MyLayout *@
+    Layout = "_Master";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@* section này được chèn vào chỗ mà có khai báo là RenderSectionAsync() có tên là NoidungFooter *@
+@section NoidungFooter{
+    <p>Noi dung Footer của trang chủ</p>
+}

@@ -1,0 +1,58 @@
+﻿@page
+@model B76_77_Validation_HtmlForm_UploadFile.Pages.ContactModel
+@{
+}
+<h1>Liên hệ</h1>
+
+<form method = "post" asp-page="Contact" class="m-2 p-3 alert-danger" enctype="multipart/form-data">
+
+    @* Hiển thị tất cả các lỗi  *@
+    <div asp-validation-summary="All"></div>
+
+    <div class= "form-group mt-2">
+        <label asp-for="customerInfo.CustomerName"></label>
+        <input asp-for="customerInfo.CustomerName" class="form-control"/>
+        <span asp-validation-for="customerInfo.CustomerName"></span>
+    </div>
+    <div class ="form-group mt-2">
+        <label asp-for="customerInfo.Email"></label>
+        <input asp-for="customerInfo.Email" class="form-control"/>
+        <span asp-validation-for="customerInfo.Email"></span>
+    </div>
+    <div class="form-group mt-2">
+        <label asp-for="customerInfo.YearOfBirth"></label>
+        <input asp-for="customerInfo.YearOfBirth" class="form-control"/>
+        <span asp-validation-for="customerInfo.YearOfBirth"></span>
+    </div>
+    <div class = "form-group mt-2">
+        <label asp-for="@Model.FileUpload"></label>
+        <input asp-for="@Model.FileUpload" class="form-control"/>
+        <span asp-validation-for="@Model.FileUpload"></span>
+    </div>
+       <div class = "form-group mt-2">
+        <label asp-for="@Model.FileUploads"></label>
+        <input asp-for="@Model.FileUploads" class="form-control"/>
+        <span asp-validation-for="@Model.FileUploads"></span>
+    </div>
+    <div class="form-group mt-3 mb-3">
+        <button class="btn btn-primary" type="submit">Gửi thông tin</button>
+    </div>
+</form>
+
+<p>@Model.thongbao</p>
+
+@if(Model.customerInfo != null)
+{
+    <p>Thông tin nhận được</p>
+    <ul>
+        <li>Tên khách: @Model.customerInfo.CustomerName</li>
+        <li>Email: @Model.customerInfo.Email</li>
+        <li>Năm sinh: @Model.customerInfo.YearOfBirth</li>
+    </ul>
+}
+
+@* Add JavaScript vào  *@
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

@@ -1,0 +1,40 @@
+﻿@page
+@addTagHelper *, B72_73_TagHelper_HtmlHelper
+@using XTLAB
+
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@* @removeTagHelper  Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper, Microsoft.AspNetCore.Mvc.TagHelpers *@
+@*  Nó sẽ tự động phát sinh ra link: /sanpham/3  ---> NÊN SỬ DỤNG TAGHELPER  
+    Để loại bỏ TagHelper thì ta thêm dấu ! trước khi mở thẻ và đóng thẻ
+    <!a asp-page="ViewProduct" asp-route-id="3">Xem sản phẩm 3</!a>
+*@
+<a asp-page="ViewProduct" asp-route-id="3">Xem sản phẩm 3</a>
+
+<form>
+    @* TagHelper *@
+    <lable asp-for="UserName">Tên người dùng</lable>
+    <input asp-for="UserName"/>
+    <hr>
+    @* HtmlHlper *@
+    @Html.Label("UserName")
+    @Html.TextBox("UserName")
+</form>
+
+@{
+    var products = new List<String>{
+        "Sản phẩm 1", "Sản phẩm 2", "Sản phẩm 3"
+        };
+}
+
+<mylist  list-title="Danh sách sản phẩm"
+    list-items="@products">
+</mylist>

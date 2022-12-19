@@ -1,0 +1,12 @@
+@* Đây là một file Partial nên nó sẽ không có chỉ thị @page, nó được chèn vào file index*@
+
+@{
+    @* Biến title được gán dữ liệu từ ViewData khác truyền vào *@
+    var title = ViewData["titlemessage"]?? "THÔNG BÁO";
+    var content = ViewData["content"]?? "Nội dung thông báo";
+}
+
+<div class = "alert alert-danger">
+    <strong>@title</strong>
+    <p>@content</p>
+</div>

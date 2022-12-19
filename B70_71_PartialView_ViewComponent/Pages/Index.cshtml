@@ -1,0 +1,81 @@
+﻿@page
+@using XTL
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    ViewData["titlemessage"] = "Sản phẩm mới";
+    ViewData["content"] = "Bạn đang xem các sản phẩm mới";
+}
+
+@* Add một Partial từ một file khác vào *@
+@await Html.PartialAsync("_Message")
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@{
+    var product1 = new Product() { Name = "IPhone 14", Desciptions = "Điện thoại IPhone của Apple", Price = 1000 };
+    var product2 = new Product() { Name = "SamSung", Desciptions = "Điện thoại SamSung của SamSung", Price = 800 };
+    var product3 = new Product() { Name = "Nokia", Desciptions = "Điện thoại Nokia của Nokia", Price = 500 };
+}
+
+<div class="row alert-info ">
+    <div class = "col">
+        @* Gọi Partial cách 1 *@
+        @* Nó sẽ tìm trong thư mục xem có file nào thuộc Partial rồi sau đó Add nó vào *@
+        <partial name="_ProductItem" model="product1" />
+    </div>
+
+    <div class = "col">
+        @* Cách chèn Partial thứ 2 *@
+        @await Html.PartialAsync("_ProductItem", product2)
+    </div>
+
+    <div class = "col">
+        @* Cách chèn Partial thứ 3, nó phải được nằm trong khối Code C# *@
+        @{
+            await Html.RenderPartialAsync("_ProductItem", product3);
+        }
+    </div>
+</div>
+
+<div class = "row bg-danger">
+    @{
+        var products = new List<Product>() {
+            new Product() {Name = "Sản phẩm 1", Desciptions = "Mô tả sản phẩm 1", Price = 1000},
+            new Product() {Name = "Sản phẩm 2", Desciptions = "Mô tả sản phẩm 2", Price = 2000},
+            new Product() {Name = "Sản phẩm 3", Desciptions = "Mô tả sản phẩm 3", Price = 3000},
+            new Product() {Name = "Sản phẩm 4", Desciptions = "Mô tả sản phẩm 4", Price = 4000},
+            new Product() {Name = "Sản phẩm 5", Desciptions = "Mô tả sản phẩm 5", Price = 5000},
+            new Product() {Name = "Sản phẩm 6", Desciptions = "Mô tả sản phẩm 6", Price = 6000},
+            };
+
+        foreach(var product in products)
+        {
+            <div class = "col">
+                @* <partial name="_ProductItem" model="product"/> *@
+
+                @* @await Html.PartialAsync("_ProductItem", product) *@
+
+                 @{
+                    await Html.RenderPartialAsync("_ProductItem", product);
+                   }
+            </div>
+        }
+    }
+</div>
+
+@* SỬ DỤNG COMPONENT 
+    - Nó sẽ tìm trên hệ thống có tên là ProductBook khởi tạo và chèn vào tại vị trí ta gọi Component
+
+*@
+@await Component.InvokeAsync("ProductBox", false)
+
+<form>
+    <lable>Nhập tên của bạn: </lable>
+    <input type = "text" name = "username">
+    <input type = "submit" value = "Gui">
+</form>

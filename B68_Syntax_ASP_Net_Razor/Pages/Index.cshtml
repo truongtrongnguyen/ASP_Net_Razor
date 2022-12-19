@@ -1,0 +1,79 @@
+﻿@*
+    - @bieuthuc, @(bieuthuc)
+    - Html.Raw(string)  -- code không được encode(không được chuyển sang mã trong code html VD: dấu < là &gt  ...)
+    - Khối code @{
+        - Code C#
+        - Mở thẻ Html
+        - Phương thức cục bộ
+        - thẻ text --> xuất ra text nhưng không nằm trong một thẻ nào cả
+        - Hoặc dùng @: 
+        - if, else, for, switch ...
+        - function {
+            Member: Method, Field, Property,...
+        }
+        - page  -> thiết lập đây là trang Razor page, có thể thiết lập URL cho nó
+        - @model  --> Đây là thuộc tính được kế thừa từ pageModel, khi trang index.cshtml chạy thì đối tượng PageModel sẽ được khởi tạo
+                Sau đó đối tượng này sẽ đucợ truyền cho trang View.cshtml 
+    }
+*@
+
+@page "/trangchu"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+    var xinchao = "<div class = 'text-danger'>Xin chao cac ban</div>";
+}
+
+<h1 class = "display-4 text-danger">CÚ PHÁP RAZOR - @this.title</h1>
+
+<p>@Model.abc</p>
+
+<ul>
+    <li>@(5+6)</li>
+    <li>PI = @Math.PI</li>
+    <li>Sin(PI/4) = @Math.Sin(Math.PI/4)</li>
+
+     @* --> code được encode *@
+    <li>@("<h1>Xin chao cac ban</h1>")</li>    
+    <li>@xinchao</li>
+
+    <li>@Html.Raw(xinchao)</li>
+</ul>
+
+@{
+    string loichao = "xin chao";
+    int age = 18;
+    void Xinchao(string name)
+    {
+        var mg = "Xin chao "+name;
+        <p>@mg</p>
+    }
+
+    string [] cacsanpham = {"Nokia", "Iphone", "Samsung"};
+}
+
+@{
+    Xinchao("Truong Trong Nguyen");
+    foreach(var i in cacsanpham)
+    {
+        <text>[@i] </text>
+    }
+    <br>
+    foreach(var i in cacsanpham)
+    {
+        @: [@i] 
+    }
+
+    if(age >= 18)
+    {
+        <p>Bạn @age tuổi được truy cập</p>
+    }
+    else
+    {
+        <p>Bạn @age tuổi không được truy cập</p>
+    }
+}
+@functions{
+        string title = "Trương Trọng Nguyễn";
+    }

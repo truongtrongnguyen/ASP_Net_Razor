@@ -1,0 +1,16 @@
+@page
+
+@{
+    ViewData["title"] = "Post1";
+    Layout = "_PostLayout";
+}
+
+<h1 class = "alter-primary"> Đây là trang Post1</h1>
+
+
+@* Đóng lại do trong Layout PostLayout không có định nghĩa section 
+    - Tên saction này sẽ được truyền vào trong PostLayout, và yêu cầu PostLayout phải có RenderSection này
+*@
+@section NoidungFooter{
+    <p>Bài viết liên quan Post1</p>
+}

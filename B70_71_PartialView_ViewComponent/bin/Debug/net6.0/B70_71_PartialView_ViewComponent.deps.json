@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "B70_71_PartialView_ViewComponent/1.0.0": {
+        "runtime": {
+          "B70_71_PartialView_ViewComponent.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "B70_71_PartialView_ViewComponent/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@{
+    @* Có nghĩa là khi ta truy cập vào trang Post1 thì toàn bộ nội dung sẽ được chèn vào PostLayout, 
+    Sau đó nội dung sinh ra ở PostLayout lại được chèn vào _Master, lúc này nó sẽ trả về cho client 
+    ---> Đây gọi là Layout con nằm trong Layout chính
+    *@
+    Layout = "_Master";
+}
+<div class = "row">
+    <div class = "col-3 alert-primary">
+        MENU TRÁI
+    </div>
+
+    <div class = "col-9">
+        @RenderBody()
+    </div>
+</div>
+
+@* Tạo một section được truyền trực tiếp từ trang Post1 vào 
+    --> Nó hoạt động như sau: Trang Post1 nó tạo ra một section có tên là NoidungFooter, Nội dung này sẽ được truyền cho PostLayout,
+        trong PostLayout nó cũng tạo ra một section có tên là NoidungFooter, sau đó cái section này nó sẽ được truyền cho Layout _Master để Render ra CLient
+*@
+@section NoidungFooter {
+    @await RenderSectionAsync("NoidungFooter", required: false)
+}

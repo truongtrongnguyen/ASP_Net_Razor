@@ -1,0 +1,15 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+    @* Cho trang Pricacy sử dụng chung Layout với trang index*@
+    Layout = "_Master";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+@* section này được chèn vào chỗ mà có khai báo là RenderSectionAsync() có tên là NoidungFooter *@
+@section NoidungFooter{
+    <p>Nội dung Footer của trang chính sách</p>
+}
